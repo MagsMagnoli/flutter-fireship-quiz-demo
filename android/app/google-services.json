@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "689951934698",
+    "firebase_url": "https://fireship-lessons-83b05.firebaseio.com",
+    "project_id": "fireship-lessons-83b05",
+    "storage_bucket": "fireship-lessons-83b05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689951934698:android:30e3c9bb3a3f08dab9ef93",
+        "android_client_info": {
+          "package_name": "dev.magnoli.fireship.quizdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689951934698-url0l900vtaae7vvf3f8cieqf7ttih9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.magnoli.fireship.quizdemo",
+            "certificate_hash": "4ab5f0b2c321342fc736a8e0ab3bb36ac1097c0b"
+          }
+        },
+        {
+          "client_id": "689951934698-2ceumiclnauv3bijmqiife9m3tgffhg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmd1vRx0dFZUpRd4Y9QWUcxCoY2R3I62o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689951934698-2ceumiclnauv3bijmqiife9m3tgffhg1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689951934698-6d7ks2fomt60c6v1j0md1cgencfsm239.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.magnoli.fireship.quizdemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
