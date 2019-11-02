@@ -1,4 +1,4 @@
-package com.example.fireship_quiz_demo
+package dev.magnoli.fireship.quizdemo
 
 import android.os.Bundle
 import io.flutter.app.FlutterActivity
