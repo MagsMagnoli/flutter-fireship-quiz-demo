@@ -1,10 +1,9 @@
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fireship_quiz_demo/screens/screens.dart';
-import 'package:fireship_quiz_demo/services/auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_analytics/observer.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'services/services.dart';
+import 'screens/screens.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(MyApp());
@@ -14,9 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        StreamProvider<FirebaseUser>.value(
-          value: AuthService().user,
-        )
+        StreamProvider<Report>.value(
+          value: Global.reportRef.documentStream,
+          catchError: (context, error) => Report(),
+        ),
+        StreamProvider<FirebaseUser>.value(value: AuthService().user),
       ],
       child: MaterialApp(
         // Firebase Analytics
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => LoginScreen(),
           '/topics': (context) => TopicsScreen(),
           '/profile': (context) => ProfileScreen(),
-          //   '/about': (context) => AboutScreen(),
+          '/about': (context) => AboutScreen(),
         },
 
         // Theme

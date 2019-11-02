@@ -1,3 +1,5 @@
 export 'login.dart';
-export 'profile.dart';
 export 'topics.dart';
+export 'quiz.dart';
+export 'profile.dart';
+export 'about.dart';
